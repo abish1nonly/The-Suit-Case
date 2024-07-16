@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.abish.thesuitcase.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/manageThings"
+        android:name="com.abish.thesuitcase.ManageThings"
+        android:label="fragment_manage_things2"
+        tools:layout="@layout/fragment_manage_things2" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.abish.thesuitcase.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.abish.thesuitcase.MessagesFragment"
+        android:label="fragment_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/addthings"
+        android:name="com.abish.thesuitcase.addthings"
+        android:label="fragment_addthings"
+        tools:layout="@layout/fragment_addthings" />
+    <fragment
+        android:id="@+id/edit_things_fragment"
+        android:name="com.abish.thesuitcase.edit_things_fragment"
+        android:label="fragment_edit_things_fragment"
+        tools:layout="@layout/fragment_edit_things_fragment" />
+</navigation>

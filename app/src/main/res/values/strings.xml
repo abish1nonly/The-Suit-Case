@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">The SuitCase</string>
+    <string name="title_text">FirebaseLogin</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_started_text">Get Started</string>
+    <string name="email_hint">Email</string>
+    <string name="password">Password</string>
+    <string name="login_text">Login</string>
+    <string name="or">or</string>
+    <string name="create_account">Create Account</string>
+    <string name="username_hint">Username</string>
+
+    <string name="Signout">Signout</string>
+    <string name="signout">Signout</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_api_key">AIzaSyD2EO2zlgeioP0rCfxRaHn6XByyBaFlppw</string>
+
+</resources>

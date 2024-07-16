@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addthings"
+    android:background="@drawable/wallll">
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center_horizontal"
+            android:text="Add new Item"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:textAllCaps="false"
+            android:textColor="#FDFBFB"
+            android:textSize="40sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Item name"
+            android:textColor="#DAF8F5F5"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#7E020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface">
+
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:maxLines="1"
+                android:textColor="#F6F4F4" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Item description"
+            android:textColor="#DAF8F5F5"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#7E020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface">
+
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/item_description"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:maxLines="1"
+                android:textColor="#F6F4F4" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Item price"
+            android:textColor="#DAF8F5F5"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#7E020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface">
+
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:maxLines="1"
+                android:textColor="#F6F4F4" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField5"
+            android:layout_width="393dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#2D020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface">
+
+            <CheckBox
+                android:id="@+id/isChecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mapFragment"
+                android:layout_marginTop="16dp"
+                android:text="Purchased"
+                android:textColor="#DAF8F5F5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField4"
+            android:layout_width="392dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Item price"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#2D020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface">
+
+            <CheckBox
+                android:id="@+id/locationCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mapFragment"
+                android:layout_marginTop="16dp"
+                android:text="Attach location for purchase"
+                android:textColor="#DAF8F5F5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/locationCheckBox"
+            android:layout_marginRight="15dp"
+            android:layout_height="210dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/clear_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:cursorVisible="true"
+            android:text="CLEAR"
+            android:textColor="#FAF7F7" />
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#AB705545"
+            android:drawableLeft="@drawable/baseline_add_24"
+            android:text="Add"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

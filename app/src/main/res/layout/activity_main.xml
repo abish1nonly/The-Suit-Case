@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/suitcase_2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="363dp"
+        android:layout_height="194dp"
+        android:background="@drawable/logo_home"
+        android:layout_marginBottom="10dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center_horizontal"
+            android:text="Login to SuitCase"
+            android:shadowColor="#0B0B0B"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textAllCaps="false"
+            android:textColor="#FDFBFB"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/email_hint"
+            android:textColor="#DAF8F5F5"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#5C020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface">
+
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#F6F4F4" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:textColor="#DAF8F5F5"
+            android:textColorHint="@color/md_theme_dark_inverseSurface"
+            app:boxBackgroundColor="#5C020202"
+            app:helperTextTextColor="@color/md_theme_dark_inverseSurface"
+            app:hintTextColor="@color/md_theme_dark_inverseSurface"
+            app:placeholderTextColor="@color/md_theme_dark_inverseSurface"
+            app:prefixTextColor="@color/md_theme_dark_inverseSurface"
+            app:suffixTextColor="@color/md_theme_dark_inverseSurface"
+            app:endIconMode="password_toggle">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#FAFAFA" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#AB705545"
+            android:text="@string/login_text"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/or"
+            android:shadowColor="#0B0B0B"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textColor="#FDFBFB"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center_horizontal"
+            android:text="Create your new SuitCase"
+            android:textAllCaps="false"
+            android:textColor="#FDFBFB"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/create_acct_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:shadowColor="#0B0B0B"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#AB705545"
+            android:text="@string/create_account"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
